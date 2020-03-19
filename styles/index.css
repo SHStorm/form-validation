@@ -1,0 +1,169 @@
+/* Custom reset */
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, small, i, em, b, strong, input, button, kbd {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, button {
+  font: inherit;
+}
+
+button {
+  border: none;
+
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Main styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: #e2e8f0;
+}
+
+.form {
+  width: 25em;
+  max-width: 95%;
+  padding: 3.2rem 4rem;
+  margin: 2rem 0;
+
+  border-radius: 0.4rem;
+
+  background: #ffffff;
+  box-shadow: 0 2.5rem 5rem -1.2rem rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  margin-bottom: 3.2rem;
+
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 1.6rem;
+}
+
+.field-label {
+  display: block;
+
+  color: #718096;
+}
+
+.required-mark {
+  color: red;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+
+  border: 0.2rem solid #edf2f7;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.field-input:hover {
+  border-color: #a0aec0;
+}
+
+.field-input:focus {
+  border-color: #4a5568;
+}
+
+.field-error-message {
+  display: none;
+
+  color: red;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 3.2rem;
+
+  color: #ffffff;
+
+  border: 0.2rem solid #48bb78;
+  border-radius: 0.4rem;
+  outline: none;
+
+  background-color: #48bb78;
+}
+
+.button:hover {
+  background-color: #38a169;
+  border-color: #38a169;
+}
+
+.button:focus {
+  border-color: #4a5568;
+
+  background-color: #38a169;
+}
+
+.valid {
+  border-color: #48bb78;
+}
+
+.valid:hover {
+  border-color: #2f855a;
+}
+
+.invalid {
+  border-color: #f56565;
+}
+
+.invalid:hover {
+  border-color: #c53030;
+}
+
+.invalid + .field-error-message {
+  display: block;
+}

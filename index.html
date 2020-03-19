@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script src="/scripts/index.js" defer></script>
+</head>
+<body>
+  <form id="form" class="form">
+    <h1 class="title">Register with us</h1>
+
+    <ul>
+      <li class="field">
+        <label class="field-label" for="username">Username <span class="required-mark">*</span></label>
+        <input class="field-input" id="username" name="username" type="text" placeholder="Enter username" required minlength="3">
+        <strong class="field-error-message">Invalid username</strong>
+      </li>
+
+      <li class="field">
+        <label class="field-label" for="email">Email <span class="required-mark">*</span></label>
+        <input class="field-input" id="email" name="email" type="email" placeholder="Enter email" required>
+        <strong class="field-error-message">Invalid email</strong>
+      </li>
+
+      <li class="field">
+        <label class="field-label" for="password">Password <span class="required-mark">*</span></label>
+        <input class="field-input" id="password" name="password" type="password" placeholder="Enter password" required minlength="6">
+        <strong class="field-error-message">Invalid password</strong>
+      </li>
+
+      <li class="field">
+        <label class="field-label" for="password-confirmation">Confirm password <span class="required-mark">*</span></label>
+        <input class="field-input" id="password-confirmation" name="password-confirmation" type="password" placeholder="Enter password again" required minlength="6">
+        <strong class="field-error-message">Invalid password confirmation</strong>
+      </li>
+    </ul>
+
+    <button class="button">Register</button>
+  </form>
+</body>
+</html>
